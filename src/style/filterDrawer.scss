@@ -1,0 +1,117 @@
+.location-list{
+    
+    margin-top: 2rem;
+     
+   
+     width: 100%;
+ 
+     &__item{
+ 
+         &:hover{
+             color: white;
+             background-color: #EB5757;
+             cursor: pointer;
+         }
+         display: flex;
+         padding: 3rem 1rem;
+         align-self: center;
+         padding: 1.4rem;
+         list-style: none;
+         text-align: start;
+         font-size: 1.4rem;
+         line-height: 18px;
+         color: #4F4F4F;
+         
+ 
+         &:not(:last-child){
+             margin-bottom: 1.2rem;
+         }
+ 
+         &-icon{
+             height: 1.9rem;
+             width: 1.9rem;
+             margin-right: 1rem;
+         }
+     }
+ }
+ 
+ 
+ 
+ 
+ .guest-list{
+     padding: 4.8rem 1.4rem;
+     display: flex;
+     flex-direction: column;
+
+     @media only screen and (max-width: $medium) {
+        padding: 3rem 1.4rem;
+     }
+    
+     &__item{
+        align-self: flex-start;
+    
+       
+     
+         &:not(:last-child){
+             margin-bottom: 2rem;
+         }
+       
+     & > input[type=number]::-webkit-inner-spin-button, 
+     & > input[type=number]::-webkit-outer-spin-button { 
+         -webkit-appearance: none; 
+         margin: 0; 
+     }
+ 
+         &--label{
+            
+             font-family: Mulish;
+             font-style: normal;
+             font-weight: bold;
+             font-size: 14px;
+             line-height: 18px;
+ 
+             color: #333333;
+         }
+ 
+         &--helper{
+            
+             font-family: Mulish;
+             font-style: normal;
+             font-weight: bold;
+             font-size: 14px;
+             line-height: 18px;
+             color: #828282;
+             margin-bottom: 1.2rem;
+         }
+ 
+         &--input{
+             text-align: center;
+             font-family: Mulish;
+             font-style: normal;
+             font-weight: bold;
+             font-size: 14px;
+             line-height: 18px;
+             color: #333333;
+             width: 4rem;
+             height: 2.3rem;
+             border: none;
+          
+             background-color: transparent;
+ 
+             &:focus{
+                 outline: none;
+                 border: none;
+             }
+         }
+ 
+         &--decrement,
+         &--increment{
+             height: 2.3rem;
+             width: 2.3rem;
+             border: 1px solid #828282;
+             border-radius: 4px;
+         }
+ 
+ 
+     }
+ }
